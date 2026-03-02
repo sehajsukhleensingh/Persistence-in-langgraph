@@ -44,7 +44,7 @@ from langgraph.checkpoint.memory import InMemorySaver, MemorySaver
 
 ## Implementations
 
-### 1️⃣ Joke Workflow (Stateful Pipeline)
+### Joke Workflow (Stateful Pipeline)
 
 Graph:
 ```
@@ -95,6 +95,19 @@ Each thread maintains its own state, enabling multi-user support.
 - Time travel debugging
 - Stateful conversational design
 - Short-term memory implementation
+
+### Persistence
+    For assistance in Langgraph refers to the ability to save and restored the state of a workflow over time.
+    Persistence not only stores last state , but also all the interim states of a workflow too.
+    
+    Due to persistence are able to implement concepts like 
+    
+    - fault tolerance in langGraph
+    - resume old chats
+    - HITL
+    - short term memory in bots
+    - time travel 
+    - debugging 
 
 ---
 
